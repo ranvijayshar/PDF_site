@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free PDF Tools - Merge, Split, Compress</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Free PDF Tools</h1>
+        
+        <!-- Merge PDF -->
+        <div class="tool-card">
+            <h2>📄 Merge PDFs</h2>
+            <form action="/merge" method="post" enctype="multipart/form-data">
+                <input type="file" name="pdfs" multiple accept=".pdf" required>
+                <p class="hint">Select multiple PDF files to combine</p>
+                <button type="submit">Merge PDFs</button>
+            </form>
+        </div>
+        
+        <!-- Split PDF -->
+        <div class="tool-card">
+            <h2>✂️ Split PDF</h2>
+            <form action="/split" method="post" enctype="multipart/form-data">
+                <input type="file" name="pdf" accept=".pdf" required>
+                <input type="text" name="pages" placeholder="Pages (e.g., 1-3,5)" required>
+                <p class="hint">Examples: "1-3" extracts pages 1 through 3</p>
+                <div class="error-message" aria-live="polite"></div>
+                <button type="submit">Split PDF</button>
+            </form>
+        </div>
+        
+        <!-- Ad Container -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_SLOT_ID"
+                 data-ad-format="auto"></ins>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
